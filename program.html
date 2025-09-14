@@ -4,10 +4,33 @@
   <meta charset="utf-8">
   <title>Program – Physical Computation Workshop</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* You can move these to style.css if you prefer */
+    .pdf-badge {
+      display:inline-block; margin-left:.5rem; padding:.12rem .45rem;
+      border:1px solid #ddd; border-radius:.6rem; font-size:.85em;
+      text-decoration:none; color:inherit;
+    }
+    .pdf-badge:hover { background:#f6f6f6; }
+    .badge-soon {
+      color:#777; border-color:#e5e5e5; cursor:default; pointer-events:none;
+    }
+    table { width:100%; border-collapse: collapse; }
+    th, td { padding:.55rem .6rem; border-bottom:1px solid #eee; text-align:left; vertical-align: top; }
+    thead th { border-bottom:2px solid #ddd; }
+    tbody tr td:first-child { white-space: nowrap; }
+    tbody tr td:nth-child(2) { white-space: nowrap; }
+    .wrapper { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+    header h1 { margin: 1.2rem 0 .6rem; font-size: 1.4rem; }
+    nav ul { list-style: none; margin: 0 0 1rem; padding: 0; display:flex; gap:1rem; }
+    nav a { text-decoration:none; }
+    .note { color:#666; }
+    footer { text-align:center; color:#666; padding:2rem 0; }
+  </style>
 </head>
 <body>
   <header class="wrapper">
-    <h1>Physical Computation Workshop · 3–4 Sept 2025 · Leuven</h1>
+    <h1>Physical Computation Workshop · 3–4 Sept 2025 · Leuven</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -29,22 +52,103 @@
       <tbody>
         <tr><td colspan="3"><strong>Wednesday · 3 Sept</strong></td></tr>
         <tr><td>13:00</td><td>Registration and welcome coffee</td><td></td></tr>
-        <tr><td>13:50</td><td>Opening remarks </td><td></td></tr>
-        <tr><td>14:00</td><td>Giacomo Indiveri</td><td>Principles of neural design for efficient implementation of physical computing systems</td></tr>
-        <tr><td>14:40</td><td>Mazyar Mirrahimi</td><td>Cost of fault‑tolerance in quantum computation</td></tr>
-        <tr><td>15:20</td><td>Yasser Roudi</td><td>Ising machines and intelligence</td></tr>
+        <tr><td>13:50</td><td>Opening remarks</td><td></td></tr>
+
+        <tr>
+          <td>14:00</td><td>Giacomo Indiveri</td>
+          <td>
+            <a href="slides/Indiveri_Leuven2025.pdf" target="_blank" rel="noopener">
+              Principles of neural design for efficient implementation of physical computing systems
+            </a>
+            <a class="pdf-badge" href="slides/Indiveri_Leuven2025.pdf" target="_blank" rel="noopener" download aria-label="Download Indiveri slides">PDF</a>
+          </td>
+        </tr>
+        <tr>
+          <td>14:40</td><td>Mazyar Mirrahimi</td>
+          <td>
+            <a href="slides/Mirrahimi_Leuven2025.pdf" target="_blank" rel="noopener">
+              Cost of fault-tolerance in quantum computation
+            </a>
+            <a class="pdf-badge" href="slides/Mirrahimi_Leuven2025.pdf" target="_blank" rel="noopener" download aria-label="Download Mirrahimi slides">PDF</a>
+          </td>
+        </tr>
+        <tr>
+          <td>15:20</td><td>Yasser Roudi</td>
+          <td>
+            <a href="slides/Roudi_Leuven2025.pdf" target="_blank" rel="noopener">
+              Ising machines and intelligence
+            </a>
+            <a class="pdf-badge" href="slides/Roudi_Leuven2025.pdf" target="_blank" rel="noopener" download aria-label="Download Roudi slides">PDF</a>
+          </td>
+        </tr>
+
         <tr><td>16:00</td><td>Coffee break</td><td></td></tr>
-        <tr><td>16:30</td><td>Johan Mentink</td><td>Neuromorphic computing for science</td></tr>
-        <tr><td>17:10</td><td>Kristiaan De Greve</td><td>Taking quantum bits and control from the lab to 300&nbsp;mm CMOS fabrication</td></tr>
+
+        <tr>
+          <td>16:30</td><td>Johan Mentink</td>
+          <td>
+            <a href="slides/Mentink_Leuven2025.pdf" target="_blank" rel="noopener">
+              Neuromorphic computing for science
+            </a>
+            <a class="pdf-badge" href="slides/Mentink_Leuven2025.pdf" target="_blank" rel="noopener" download aria-label="Download Mentink slides">PDF</a>
+          </td>
+        </tr>
+        <tr>
+          <td>17:10</td><td>Kristiaan De Greve</td>
+          <td>
+            Taking quantum bits and control from the lab to 300&nbsp;mm CMOS fabrication
+            <span class="pdf-badge badge-soon" aria-hidden="true">soon</span>
+          </td>
+        </tr>
         <tr><td>17:50</td><td>Closing discussion</td><td></td></tr>
 
         <tr><td colspan="3"><strong>Thursday · 4 Sept</strong></td></tr>
-        <tr><td>13:00</td><td>John‑Paul Strachan</td><td>Perspective and case studies in computing with physical analog systems</td></tr>
-        <tr><td>13:40</td><td>Julian Berberich</td><td>Quantum computing through the lens of control: A tutorial introduction</td></tr>
-        <tr><td>14:20</td><td>Frederic Schuller</td><td>Quantum ports and decomposition</td></tr>
+        <tr>
+          <td>13:00</td><td>John-Paul Strachan</td>
+          <td>
+            <a href="slides/Strachan_Leuven2025.pdf" target="_blank" rel="noopener">
+              Perspective and case studies in computing with physical analog systems
+            </a>
+            <a class="pdf-badge" href="slides/Strachan_Leuven2025.pdf" target="_blank" rel="noopener" download aria-label="Download Strachan slides">PDF</a>
+          </td>
+        </tr>
+        <tr>
+          <td>13:40</td><td>Julian Berberich</td>
+          <td>
+            <a href="slides/Berberich_Leuven2025.pdf" target="_blank" rel="noopener">
+              Quantum computing through the lens of control: A tutorial introduction
+            </a>
+            <a class="pdf-badge" href="slides/Berberich_Leuven2025.pdf" target="_blank" rel="noopener" download aria-label="Download Berberich slides">PDF</a>
+          </td>
+        </tr>
+        <tr>
+          <td>14:20</td><td>Frederic Schuller</td>
+          <td>
+            Quantum ports and decomposition
+            <span class="pdf-badge badge-soon" aria-hidden="true">soon</span>
+          </td>
+        </tr>
+
         <tr><td>15:00</td><td>Coffee break</td><td></td></tr>
-        <tr><td>15:30</td><td>Fulvio Forni</td><td>Physical modelling of neuromorphic circuits</td></tr>
-        <tr><td>16:10</td><td>Rodolphe Sepulchre</td><td>Physical modelling at scale</td></tr>
+
+        <tr>
+          <td>15:30</td><td>Fulvio Forni</td>
+          <td>
+            <a href="slides/Forni_Leuven2025.pdf" target="_blank" rel="noopener">
+              Physical modelling of neuromorphic circuits
+            </a>
+            <a class="pdf-badge" href="slides/Forni_Leuven2025.pdf" target="_blank" rel="noopener" download aria-label="Download Forni slides">PDF</a>
+          </td>
+        </tr>
+        <tr>
+          <td>16:10</td><td>Rodolphe Sepulchre</td>
+          <td>
+            <a href="slides/Sepulchre_Leuven2025.pdf" target="_blank" rel="noopener">
+              Physical modelling at scale
+            </a>
+            <a class="pdf-badge" href="slides/Sepulchre_Leuven2025.pdf" target="_blank" rel="noopener" download aria-label="Download Sepulchre slides">PDF</a>
+          </td>
+        </tr>
         <tr><td>16:50</td><td>Closing discussion</td><td></td></tr>
       </tbody>
     </table>
@@ -57,4 +161,3 @@
   <footer>© 2025 Organising Committee</footer>
 </body>
 </html>
-
